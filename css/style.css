@@ -609,7 +609,7 @@ nav {
     left: 22%; }
   .price_btn_white {
     left: 24%; } }
-@media (max-width: 376px) {
+@media (max-width: 575px) {
   .menu {
     display: block; }
     .menu_logo img {
@@ -621,107 +621,6 @@ nav {
     .menu_btn {
       display: block;
       margin: 20px auto; }
-
-  .subheader {
-    height: 300px;
-    background: none; }
-    .subheader_title {
-      padding-top: 100px;
-      width: 100%; }
-    .subheader_editor img {
-      width: 200px; }
-    .subheader_big {
-      font-size: 30px; }
-    .subheader_text {
-      font-size: 14px; }
-    .subheader_try img {
-      width: 120px;
-      height: 40px; }
-    .subheader_try_text {
-      margin: 8px 8px;
-      font-size: 15px; }
-
-  .trusted_logos {
-    width: 290px; }
-    .trusted_logos img {
-      width: 54px; }
-
-  .awesom_fast_header, .awesom_proto_header, .awesom_vector_header {
-    font-size: 19px; }
-  .awesom_fast_text, .awesom_proto_text, .awesom_vector_text {
-    font-size: 12px; }
-  .awesom_icon img {
-    width: 60px; }
-
-  .smart_header {
-    font-size: 28px; }
-  .smart_icon_header1, .smart_icon_header2, .smart_icon_header3 {
-    font-size: 30px; }
-  .smart_icon_text {
-    font-size: 17px; }
-
-  .design_img {
-    display: none; }
-
-  .app_icon_img {
-    margin-left: 0; }
-
-  .price_header {
-    font-size: 32px; }
-  .price_btn_white {
-    left: 10%; }
-  .price_btn_blue {
-    left: 5%; }
-  .price_box {
-    display: block; }
-    .price_box_head {
-      width: 290px; }
-  .price_box1, .price_box2 {
-    width: 290px; }
-
-  .meet_about_header, .meet_about_header2 {
-    font-size: 32px; }
-
-  .faq_header {
-    font-size: 34px; }
-  .faq_box1_header {
-    padding: 45px 18px 37px 40px; }
-  .faq_box1_text {
-    padding: 0px 11px 78px 11px; }
-  .faq_box {
-    font-size: 14px; }
-
-  .download {
-    margin-top: 0; }
-    .download_header {
-      font-size: 30px; }
-    .download_img img {
-      margin-top: 35px; }
-    .download_img2 {
-      display: none; }
-
-  .footer {
-    margin-top: 30px; }
-    .footer_menu {
-      display: block; }
-      .footer_menu_item {
-        margin-top: 20px; }
-    .footer .smi i:nth-child(3) {
-      color: #09142e; } }
-@media (max-width: 575px) {
-  .menu {
-    display: block; }
-    .menu_logo img {
-      display: block;
-      margin: 0 auto; }
-    .menu_item {
-      text-align: center;
-      margin-top: 15px; }
-    .menu_try img {
-      width: 112px;
-      display: block;
-      margin: 0 auto;
-      margin-top: 20px; }
 
   .subheader {
     height: 300px;
