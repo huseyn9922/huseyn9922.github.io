@@ -609,7 +609,7 @@ nav {
     left: 22%; }
   .price_btn_white {
     left: 24%; } }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .menu {
     display: block; }
     .menu_logo img {
@@ -708,7 +708,7 @@ nav {
         margin-top: 20px; }
     .footer .smi i:nth-child(3) {
       color: #09142e; } }
-@media (max-width: 320px) {
+@media (max-width: 575px) {
   .menu {
     display: block; }
     .menu_logo img {
