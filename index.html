@@ -1,438 +1,579 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <meta name="title" content="Мое портфолио">
+    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Мое портфолио">
+    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Мое портфолио">
+    <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Test</title>
 </head>
 <body>
-    <header>
-        <div class="container"> 
+    <aside class="sidepanel animate__animated animate__backInUp wow">
+        <a href="#" class="sidepanel__link"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" class="sidepanel__link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="sidepanel__link"><i class="fab fa-github"></i></a>
+        <div class="sidepanel__divider"></div>
+        <div class="sidepanel__text"><span>Social media</span></div>
+    </aside>
+
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close">
+                <i class="fas fa-times"></i>
+            </div>
+
             <nav>
-                <ul class="menu">
-                    <div class="menu_logo">
-                        <img src="img/logo.png" alt="">
-                    </div>
-                    <li class="menu_item"><a href="" class="menu_link">Home</a></li>
-                    <li class="menu_item"><a href="" class="menu_link">Key Features</a></li>
-                    <li class="menu_item"><a href="" class="menu_link">Pricing</a></li>
-                    <li class="menu_item"><a href="" class="menu_link">Testiminial</a></li>
-                    <li class="menu_item"><a href="" class="menu_link">FAQ</a></li>
-                    <!-- <div class="menu_try">
-                        <img src="icons/iconTry.png" alt="">
-                    </div> -->
-                    <button class="menu_btn">Try for free</button>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="#about">About me</a></li>
+                    <li class="menu__link"><a href="#resume">Experiance</a></li>
+                    <li class="menu__link"><a href="#skills">Skills</a></li>
+                    <li class="menu__link"><a href="#portfolio">Works</a></li>
+                    <li class="menu__link"><a href="#contacts">Contact</a></li>
                 </ul>
-                
             </nav>
-            
-        </div>
-    </header>
-
-    <section class="subheader">
-        <div class="container">
-            <div class="subheader_title">
-        <div class="subheader_editor">
-            <img src="icons/head1.png" alt="">
-        </div>
-        <h1 class="subheader_big">Best app for your modern lifestyle</h1>
-        <div class="subheader_text">
-            Increase productivity with a simple to-do app. app for managing
-        </div>
-        <div class="subheader_try">
-            <img src="icons/iconTry.png" alt="">
-            <div class="subheader_try_text">
-                Watch demo video
+            <div class="menu__social">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
             </div>
         </div>
+        <div class="menu__overlay"></div>
     </div>
-</div>
-    </section>
 
-    <section class="trusted">
+    <section class="promo">
+        <div class="hamburger animate__animated animate__backInUp wow"">
+            <span></span>
+            <span class="long"></span>
+            <span></span>
+        </div>
         <div class="container">
-            <div class="trusted_header">Trusted by companies like</div>
-            <div class="trusted_logos">
-                <img src="icons/trsutedIcon/1.png" alt="">
-                <img src="icons/trsutedIcon/2.png" alt="">
-                <img src="icons/trsutedIcon/3.png" alt="">
-                <img src="icons/trsutedIcon/4.png" alt="">
-                <img src="icons/trsutedIcon/5.png" alt="">
+            <div class="title title_fz25 promo__subtitle">My name is Huseynzade Huseynbala</div>
+            <!-- <h1 class="title title_fz70 promo__title">I am web-developer<br> 
+                from Azerbaijan</h1> -->
+                <div class="wrapper">
+                    <div class="typing-demo">
+                        I am web-developer 
+                        <!-- from Azerbaijan -->
+                    </div>
+                </div>
+            <div class="promo__btns">
+                <a href="#" class="promo__link btn">Portfolio</a>
+                <a href="#" class="promo__link">About me</a>
             </div>
         </div>
     </section>
 
-    <section class="awesom">
+    <section id="about" class="about">
         <div class="container">
-            <div class="row">
-            <div class="col-md-6">
-                <div class="awesom_img1">
-                    <img src="img/2_bg.png" alt="2bg" class="bg2">
+            <div class="about__wrapper">
+                <div class="about__photo animate__animated animate__fadeInLeftBig wow">
+                    <img src="img/me.jpg" alt="photo">
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="awesom_header">Awesome apps <br>
-                    features</div>
-                <div class="awesom_text">Increase productivity with a simple to-do app. app for <br>
-                    managing your personal budgets.</div>
-                <div class="awesom_fast">
-                    <div class="awesom_icon"><img src="icons/fast_icon.png" alt=""></div>
-                    <div>
-                    <div class="awesom_fast_header">Fast Performance</div>
-                    <div class="awesom_fast_text">Get your blood tests delivered at <br>
-                        home collect a sample from the <br>
-                        news your blood tests.</div>
-                    </div>
-                </div>               
-                <div class="awesom_fast">
-                    <div class="awesom_icon"><img src="icons/proto_icon.png" alt=""></div>
-                    <div>
-                    <div class="awesom_proto_header">Prototyping</div>
-                    <div class="awesom_fast_text">Get your blood tests delivered at <br>
-                        home collect a sample from the <br>
-                        news your blood tests.</div>
+                <div class="about__descr">
+                    <h2 class="title title_fz16 about__title animate__animated animate__fadeInRightBig wow">About me</h2>
+                    <div class="title title_fz36 about__subtitle animate__animated animate__fadeInRight wow">My name is Huseynbala</div>
+                    <div class="divider animate__animated animate__fadeInRightBig wow"></div>
+                    <p class="about__text animate__animated animate__fadeInRight wow">To be an innovator in digital media and
+                        responsible social media management, and to
+                        use online platforms to organize causeoriented communities</p>
                 </div>
-            </div>                
-                <div class="awesom_fast">                    
-                    <div class="awesom_icon"><img src="icons/vector_icon.png" alt=""></div>
-                    <div>
-                    <div class="awesom_vector_header">Vector Editing</div>
-                    <div class="awesom_fast_text">Get your blood tests delivered at <br>
-                        home collect a sample from the <br>
-                        news your blood tests.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    </section>
-
-    <section class="smart">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="smart_header">
-                        Smart jackpots that <br>
-                        you may love this <br>
-                        anytime & anywhere
-                    </div>
-                    <!-- <div class="smart_line"></div> -->
-                </div>
-                
-                <div class="col-md-6">
-                    <div class="smart_text">
-                        The rise of mobile devices transforms the way we
-                        consume information entirely and the world's most
-                        elevant channels such as Facebook.
-                    </div>
-                </div>
-            </div>
-            <div class="smart_icon">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="smart_icon_circle">
-                        <img src="icons/automatic_i.png" alt="">
-                    </div>
-                    <div class="smart_icon_header1">
-                        Automatic Payouts
-                    </div>
-                    <div class="smart_icon_text">
-                        Get your blood tests delivered at <br>
-                        home collect a sample from the <br>
-                        news your blood tests.
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="smart_icon_circle">
-                        <img src="icons/network_i.png" alt="">
-                    </div>
-                    <div class="smart_icon_header2">
-                        Automatic Payouts
-                    </div>
-                    <div class="smart_icon_text">
-                        Get your blood tests delivered at <br>
-                        home collect a sample from the <br>
-                        news your blood tests.
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="smart_icon_circle">
-                        <img src="icons/bigger_i.png" alt="">
-                    </div>
-                    <div class="smart_icon_header3">
-                        Automatic Payouts
-                    </div>
-                    <div class="smart_icon_text">
-                        Get your blood tests delivered at <br>
-                        home collect a sample from the <br>
-                        news your blood tests.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <section class="design">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-6">
-                    <div class="design_img">
-                    <img src="img/3_bg.png" alt="">
-                </div>
-                </div>
-                <div class="col-sm-6 col-md-6">
-                    <div class="design_header">Designed & built by <br>
-                        the latest code <br>
-                        integration</div>
-                    <div class="design_text">
-                        The rise of mobile devices transforms the way we
-                        consume information entirely and the world's most
-                        elevant channels such as Facebook.
-                    </div>
-                    <button class="design_btn">Learn more</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="app">
-        <div class="container">
-            <div class="app_header">Why you should choose <br>
-                our app</div>
-            <div class="app_text">The rise of mobile devices transforms the way we consume information entirely <br>
-                and the world's most elevant channels such as Facebook.</div>
-            <div class="app_icon">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="app_icon_img"><img src="icons/OurApp/1.png" alt=""></div>
-                    <div class="app_icon_header">App Development</div>
-                    <div class="app_icon_text">Get your blood tests delivered at
-                        home collect a sample from the
-                        news your blood tests.</div>
-                </div>
-                <div class="col-md-4">
-                    <div class="app_icon_img"><img src="icons/OurApp/2.png" alt=""></div>
-                    <div class="app_icon_header">10 Times Award</div>
-                    <div class="app_icon_text">Get your blood tests delivered at
-                        home collect a sample from the
-                        news your blood tests.</div>
-                </div>
-                <div class="col-md-4">
-                    <div class="app_icon_img"><img src="icons/OurApp/3.png" alt=""></div>
-                    <div class="app_icon_header">Cloud Storage</div>
-                    <div class="app_icon_text">Get your blood tests delivered at
-                        home collect a sample from the
-                        news your blood tests.</div>
-                </div>
-                <div class="col-md-4">
-                    <div class="app_icon_img"><img src="icons/OurApp/4.png" alt=""></div>
-                    <div class="app_icon_header">Customization</div>
-                    <div class="app_icon_text">Get your blood tests delivered at
-                        home collect a sample from the
-                        news your blood tests.</div>
-                </div>
-                <div class="col-md-4">
-                    <div class="app_icon_img"><img src="icons/OurApp/5.png" alt=""></div>
-                    <div class="app_icon_header">UX Planning</div>
-                    <div class="app_icon_text">Get your blood tests delivered at
-                        home collect a sample from the
-                        news your blood tests.</div>
-                </div>
-                <div class="col-md-4">
-                    <div class="app_icon_img"><img src="icons/OurApp/6.png" alt=""></div>
-                    <div class="app_icon_header">Customer Support</div>
-                    <div class="app_icon_text">Get your blood tests delivered at
-                        home collect a sample from the
-                        news your blood tests.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <section class="ultimate">
-        <div class="container">
-            <div class="ultimate_header">Ultimate features <br>
-                that we built</div>
-            <div class="ultimate_text">
-                The rise of mobile devices transforms the way we <br>
-                consume information entirely.
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="ultimate_icon_img"><img src="icons/OurApp/1.png" alt=""></div>
-                    <div class="ultimate_icon_header">App Development</div>
-                    <div class="ultimate_icon_text">Get your blood tests delivered at
-                        home collect a sample from the
-                        news your blood tests.</div>
-                        <div class="ultimate_icon_img"><img src="icons/OurApp/3.png" alt=""></div>
-                    <div class="ultimate_icon_header">Cloud Storage</div>
-                    <div class="ultimate_icon_text">Get your blood tests delivered at
-                        home collect a sample from the
-                        news your blood tests.</div>
-                </div>
-                <div class="col-md-3">
-                    <div class="ultimate_icon_img"><img src="icons/OurApp/7.png" alt=""></div>
-                    <div class="ultimate_icon_header">UX Planing</div>
-                    <div class="ultimate_icon_text">Get your blood tests delivered at
-                        home collect a sample from the
-                        news your blood tests.</div>
-                    <div class="ultimate_icon_img"><img src="icons/OurApp/6.png" alt=""></div>
-                    <div class="ultimate_icon_header">Customer support</div>
-                    <div class="ultimate_icon_text">Get your blood tests delivered at
-                        home collect a sample from the
-                        news your blood tests.</div>
-                </div>
-                <div class="col-md-6">
-                    <div class="ultimate_img2">
-                        <img src="img/4_bg.png" alt="">
-                    </div>
-                </div>
-            </div> 
-            <!-- <button class="ultimate_btn">See all</button> -->
-        </div>       
-    </section>
-
-    <section class="price">
-        <div class="container">
-            <div class="price_header">Get awesome features, without <br>
-                extra charges</div>
-            <div class="price_text">
-                The rise of mobile devices transforms the way we consume information entirely <br>
-                and the world's most elevant channels such as Facebook.
-            </div>
-            <div class="price_btn">
-                <button class="price_btn_blue">Monthly</button>
-                <button class="price_btn_white"><h5>Annually</h5></button>
-            </div>
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <div class="price_box">
-                        <div class="price_box1">
-                            <div class="price_box_head">
-                                <div class="price_box_head_header">$0</div>
-                                <div class="price_box_head_subheader">Business Class</div>
-                                <div class="price_box_head_text">For small teams or office</div>
+                <div class="about__skills">
+                    <div class="about__skills-item animate__animated animate__fadeInRight wow">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/web_development.svg" alt="web-dev">
+                        </div>
+                        <div>
+                            <div class="title title_fz14">
+                                Web-development
                             </div>
-                            <ul class="price_texts">
-                                <li>Drag & Drop Builder</li>
-                                <li>1,000's of Templates</li>
-                                <li>Blog Support Tools</li>
-                                <li>eCommerce Store</li>
-                            </ul>
-                            <button class="price_btn2">Start free trail</button>
-                        </div>
-                        <div class="price_box2">
-                            <div class="price_box_head">
-                                <div class="price_box_head_header">$99</div>
-                                <div class="price_box_head_subheader">Pro Master</div>
-                                <div class="price_box_head_text">For Best opportunities</div>
+                            <div class="about__skills-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>
-                            <ul class="price_texts">
-                                <li>Drag & Drop Builder</li>
-                                <li>1,000's of Templates</li>
-                                <li>Blog Support Tools</li>
-                                <li>eCommerce Store</li>
-                            </ul>
-                            <button class="price_btn2">Start free trail</button>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="meet">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="meet_img">
-                        <img src="img/5_bg.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <div class="meet_about">
-                        <div class="meet_about_header">Meet Client Satisfaction <br>
-                            by using product</div>
-                        <div class="meet_about_text1">The rise of mobile devices transforms the way we consume. <br>
-                            elevant channels such as Facebook.</div>
-                        <div class="meet_about_stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                    <div class="about__skills-item animate__animated animate__fadeInRightBig wow">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/mobile_dev.svg" alt="mobile-dev">
                         </div>
-                        <div class="meet_about_header2">User friendly & Customizable</div>
-                        <div class="meet_about_text2">Bring to the table win-win survival strategies to ensure proactive domi- <br> nation. At the end of the day, going forward, a new normal that has <br> evolved from generation X is on the runway heading towards a <br> streamlined cloud solution. User generated content in real-time will <br> have multiple touchpoints for offshoring.</div>
+                        <div>
+                            <div class="title title_fz14">
+                                SMM
+                            </div>
+                            <div class="about__skills-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__skills-item animate__animated animate__fadeInRightBig wow">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/design.svg" alt="design">
+                        </div>
+                        <div>
+                            <div class="title title_fz14">
+                               Graphic Designer
+                            </div>
+                            <div class="about__skills-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq">
+
+    <section id="resume" class="resume">
         <div class="container">
-                <div class="faq_header">Frequently asked questions</div>
-                <div class="faq_text">The rise of mobile devices transforms the way we consume information entirely <br>
-                    and the world's most elevant channels such as Facebook.</div>
-            <div class="faq_box1">
-               <div class="faq_box1_header">How to contact with riders emergency?</div>
-               <div class="faq_box1_text">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</div>
+            <h2 class="title title_2fz16 title__section-title">Experiance</h2>
+            <div class="title title_2fz36 title__section-subtitle">What can I do</div>
+            <div class="divider"></div>
+
+            <div class="resume__wrapper">
+                <div class="resume__column">
+                    <h3 class="title title_fz20 resume__column-title">Education</h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/university.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title_fz20 animate__animated animate__fadeInRight wow">Udemy</h4>
+                                    <div class="resume__item-location animate__animated animate__fadeInRight wow data-wow-duration="2s" data-wow-delay="1s"">Web-development course | (2020)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title_fz20 animate__animated animate__fadeInRight wow">Code Academy</h4>
+                                    <div class="resume__item-location animate__animated animate__fadeInRight wow data-wow-duration="2s" data-wow-delay="1s"">Web-development course |(2017 December-2018May)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title_fz20 animate__animated animate__fadeInRight wow">SAT</h4>
+                                    <div class="resume__item-location animate__animated animate__fadeInRight wow data-wow-duration="2s" data-wow-delay="1s"">COMPUTER SCIENCE | (May-August 2017) (Calgary, Alberra,Canada)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title_fz20 animate__animated animate__fadeInRight wow">BowValley College</h4>
+                                    <div class="resume__item-location animate__animated animate__fadeInRight wow data-wow-duration="2s" data-wow-delay="1s"">ELL PREPARATION | (JAnuary-April 2017) (Calgary,Alberta,Canada)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title_fz20 animate__animated animate__fadeInRight wow">"Ankara Məktəbi" School-Lycee</h4>
+                                    <div class="resume__item-location animate__animated animate__fadeInRight wow data-wow-duration="2s" data-wow-delay="1s"">HIGH SCHOOL(RUSSIAN SECTOR) | (September 2006- May 2017)</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume__column">
+                    <h3 class="title title_fz20 resume__column-title">Work experiance</h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/developer.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title_fz20 animate__animated animate__fadeInRight wow">Freelancer Web-developer</h4>
+                                    <div class="resume__item-location animate__animated animate__fadeInRight wow data-wow-duration="2s" data-wow-delay="1s"">(2018-2020)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/designer.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title_fz20 animate__animated animate__fadeInRight wow">"Hacioğulları Mebel Fabriki" LLC</h4>
+                                    <div class="resume__item-location animate__animated animate__fadeInRight wow data-wow-duration="2s" data-wow-delay="1s"">MARKETING MANAGER AND GRAPHIC DESIGNER | (01 OCTOBER-15 DECEMBER 2019)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/designer.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title_fz20 animate__animated animate__fadeInRight wow">"Interactive Media" LLC</h4>
+                                    <div class="resume__item-location animate__animated animate__fadeInRight wow data-wow-duration="2s" data-wow-delay="1s"">Digtal Media Manager and Graphic Designer | (01 September-01October)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/designer.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title_fz20 animate__animated animate__fadeInRight wow">"Dadaşoğlu şirkətlər qrupu" LLC</h4>
+                                    <div class="resume__item-location animate__animated animate__fadeInRight wow data-wow-duration="2s" data-wow-delay="1s"">DIGITAL MEDIA MANAGER, VIDEOGRAPH AND GRAPHIC DESIGNER | July 2018-April 2019</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="faq_box">App installation failed, how to update system information?</div>
-            <div class="faq_box">Website reponse taking time, how to improve?</div>
-            <div class="faq_box">New update fixed all bug and issues</div>
-            <div class="faq_box">How to contact with riders emergency?</div>
         </div>
     </section>
 
-    <section class="download">
+    <section id="skills" class="skills">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="download_header">Download our App now !</div>
-                    <div class="download_text">The rise of mobile devices transforms the way we consume information entirely <br>
-                        and the world's most elevant channels such as Facebook.</div>
-                        <div class="download_img">
-                            <img src="icons/appstore.png" alt="">
-                            <img src="icons/playstore.png" alt="">
-                        </div>
+            <h2 class="title title_fz16 title__section-title">Skills</h2>
+            <div class="title title_fz36 title__section-subtitle">What I use</div>
+            <div class="divider"></div>
+            <div class="center">
+                <div>
+                    <div class="skills__box">
+                    <img src="icons/skills/js_js.png" alt="React">
+                    <div class="skills__box-header">React</div>
                 </div>
-                <div class="col-md-6">
-                    <div class="download_img2">
-                        <img src="img/6_bg.png" alt="">
+                </div>
+                <div>
+                    <div class="skills__box">
+                    <img src="icons/skills/html5_js.png" alt="React">
+                </div>
+                </div>
+                <div>
+                    <div class="skills__box">
+                    <img src="icons/skills/CSS3_js.png" alt="React">
+                </div>
+                </div>
+                <div>
+                    <div class="skills__box">
+                    <img src="icons/skills/sass_js.png" alt="React">
+                </div>
+                </div>
+                <div>
+                    <div class="skills__box">
+                    <img src="icons/skills/jqery_js.png" alt="React">
+                </div>
+                </div>
+                <div>
+                    <div class="skills__box">
+                    <img src="icons/skills/boot_js.png" alt="React">
+                </div>
+                </div>
+                <div>
+                    <div class="skills__box">
+                    <img src="icons/skills/ap_js.png" alt="React">
+                </div>
+                </div>
+                <div>
+                    <div class="skills__box">
+                    <img src="icons/skills/ai_js.png" alt="React">
+                </div>
+                </div>
+              </div>
+            <h2 class="title title_fz16 title__section-title">Skills</h2>
+            <div class="title title_fz36 title__section-subtitle">Personal</div>
+            <div class="divider"></div> 
+            <div class="skills__ratings">
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay=".1s"">
+                    <div class="title title_fz14 skills__ratings-title">Making Websites</div>
+                    <div class="skills__ratings-counter">100%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
                     </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay=".2s"">
+                    <div class="title title_fz14 skills__ratings-title">Working with data</div>
+                    <div class="skills__ratings-counter">85%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay=".3s"">
+                    <div class="title title_fz14 skills__ratings-title">Creative</div>
+                    <div class="skills__ratings-counter">90%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay=".4s"">
+                    <div class="title title_fz14 skills__ratings-title">SMM and Analitics</div>
+                    <div class="skills__ratings-counter">75%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay=".5s"">
+                    <div class="title title_fz14 skills__ratings-title">Graphic Design</div>
+                    <div class="skills__ratings-counter">90%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay=".6s"">
+                    <div class="title title_fz14 skills__ratings-title">Microsoft Office</div>
+                    <div class="skills__ratings-counter">95%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title title_fz16 title__section-title">Skills</h2>
+            <div class="title title_fz36 title__section-subtitle">Coding</div>
+            <div class="divider"></div> 
+            <div class="skills__ratings">
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay=".7s"">
+                    <div class="title title_fz14 skills__ratings-title">HTML 5</div>
+                    <div class="skills__ratings-counter">95%</div>
+                    <div class="skills__ratings-line skills__html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay=".8s"">
+                    <div class="title title_fz14 skills__ratings-title">CSS 3</div>
+                    <div class="skills__ratings-counter">95%</div>
+                    <div class="skills__ratings-line skills__css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay=".9s"">
+                    <div class="title title_fz14 skills__ratings-title">JavaScript</div>
+                    <div class="skills__ratings-counter">55%</div>
+                    <div class="skills__ratings-line skills__js">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay="1s"">
+                    <div class="title title_fz14 skills__ratings-title">Bootstrap</div>
+                    <div class="skills__ratings-counter">95%</div>
+                    <div class="skills__ratings-line skills__boot">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay="1s"">
+                    <div class="title title_fz14 skills__ratings-title">jQuery</div>
+                    <div class="skills__ratings-counter">55%</div>
+                    <div class="skills__ratings-line skills__jquery">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay="1s"">
+                    <div class="title title_fz14 skills__ratings-title">Sass,Scss,Less</div>
+                    <div class="skills__ratings-counter">90%</div>
+                    <div class="skills__ratings-line skills__sass">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title title_fz16 title__section-title">Skills</h2>
+            <div class="title title_fz36 title__section-subtitle">Designer</div>
+            <div class="divider"></div>
+            <div class="skills__ratings">
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay="1s"">
+                    <div class="title title_fz14 skills__ratings-title">AdobePhotoshop</div>
+                    <div class="skills__ratings-counter">60%</div>
+                    <div class="skills__ratings-line skills__photo">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay="1s"">
+                    <div class="title title_fz14 skills__ratings-title">AdobeIllustrator</div>
+                    <div class="skills__ratings-counter">95%</div>
+                    <div class="skills__ratings-line skills__html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay="1s"">
+                    <div class="title title_fz14 skills__ratings-title">Figma</div>
+                    <div class="skills__ratings-counter">55%</div>
+                    <div class="skills__ratings-line skills__html">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title title_fz16 title__section-title">Skills</h2>
+            <div class="title title_fz36 title__section-subtitle">Languages</div>
+            <div class="divider"></div>
+            <div class="skills__ratings">
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay="1s"">
+                    <div class="title title_fz14 skills__ratings-title">Azerbaijan</div>
+                    <div class="skills__ratings-counter">100%</div>
+                    <div class="skills__ratings-line skills__az">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay="1s"">
+                    <div class="title title_fz14 skills__ratings-title">Russian</div>
+                    <div class="skills__ratings-counter">100%</div>
+                    <div class="skills__ratings-line skills__rus">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item animate__animated animate__fadeIn wow data-wow-duration="2s" data-wow-delay="1s"">
+                    <div class="title title_fz14 skills__ratings-title">English</div>
+                    <div class="skills__ratings-counter">80%</div>
+                    <div class="skills__ratings-line skills__eng">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="title title_fz16 title__section-title">Portfolio</h2>
+            <div class="title title_fz36 title__section-subtitle">My works</div>
+            <div class="divider"></div>
+            <div class="portfolio__wrapper">
+                <a href="#" class="portfolio__item">
+                    <img src="img/works/uber.jpg" alt="uber">
+                </a>
+                <a href="/dist/appLab/index.html" class="portfolio__item">
+                    <img src="img/works/1x/appLavb.png" alt="applab">
+                </a>
+                <a href="/dist/E-commerce/index.html" class="portfolio__item">
+                    <img src="img/1x/ecommerce.png" alt="ecommerce">
+                </a>
+                <a href="/dist/elishleri/index.html" class="portfolio__item vertical">
+                    <img src="img/works/handmade.jpg" alt="hand">
+                </a>
+                <a href="/dist/graduation_project/index.html" class="portfolio__item">
+                    <img src="img/works/graduation.jpg" alt="graduation">
+                </a>
+                <a href="/dist/testWebsite2/index.html" class="portfolio__item horizontal">
+                    <img src="img/works/1x/1x/agency.png" alt="uber">
+                </a>
+            </div>
+            <button class="portfolio__btn btn"><a href="portfolio.html">See more</a></button>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <!-- <img src="img/1x/contbg.png" alt="photo"> -->
+                </div>
+                <div class="contacts__descr">
+                    <h2 class="title title_fz16 contacts__title">Contact</h2>
+                    <div class="title title_fz36 contacts__subtitle">Let's make a website</div>
+                    <div class="divider"></div>
+
+                    <div class="title title_fz14 contacts__text">
+                        Finde me in social media
+                    </div>
+                    <div class="contacts__social">
+                        <a href="#" class="contacts__link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="contacts__link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="contacts__link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="contacts__link"><i class="fas fa-phone-square"></i></a>
+                        <div class="contacts__number">(+994)077-366-01-01</div>
+                    </div>
+                    <div class="title title_fz14 contacts__text">
+                        Или оставьте ваши данные и я сама вам напишу:
+                    </div>
+
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required name="name" id="name" type="text">
+                            <label for="name">Your name</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required name="email" type="email">
+                            <label for="email">Your E-mail</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text"></textarea>
+                            <label for="text">Your text</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn">Send a message</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(a) с <a href="/src/policy.html">политикой конфиденциальность</a></span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-            <img src="img/logo.png" alt="" class="footer_logo">
-        <ul class="footer_menu">
-            <li class="footer_menu_item">Home</li>
-            <li class="footer_menu_item">Key Features</li>
-            <li class="footer_menu_item">Pricing</li>
-            <li class="footer_menu_item">Testiminial</li>
-            <li class="footer_menu_item">FAQ</li>
-        </ul>
-        <div class="smi">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fas fa-code-branch"></i>
-            <i class="fab fa-github-square"></i>
+        <div class="container">
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="footer__link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer__link"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer__text">&#169; Create by Huseynzade 2020</div>
         </div>
     </footer>
-
+    
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
