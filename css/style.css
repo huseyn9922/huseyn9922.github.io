@@ -313,7 +313,7 @@ template {
   white-space: nowrap;
   overflow: hidden;
   border-right: 1px solid;
-  font-size: 5em;
+  font-size: 4.5em;
   color: blanchedalmond; }
 
 @-webkit-keyframes typing {
@@ -802,6 +802,7 @@ template {
         top: 0; }
     .about__skills-text {
       margin-top: 6px;
+      margin-bottom: 50px;
       font-size: 12px;
       line-height: 18px; }
 
@@ -1091,13 +1092,20 @@ template {
   .contacts__social {
     margin-top: 20px; }
     .contacts__social a {
-      font-size: 30px;
+      font-size: 20px;
       color: black;
       margin-right: 20px; }
       .contacts__social a:hover {
         color: #FFA501;
         -webkit-transition: .5s all;
         transition: .5s all; }
+  .contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .contacts__link h5 {
+      margin-left: 20px;
+      font-size: 16px; }
   .contacts__form {
     margin-top: 30px;
     display: grid;
@@ -1377,5 +1385,12 @@ template {
 .portf__txt {
   font-size: 20px;
   margin-top: 10px; }
+
+@media (max-width: 576px) {
+  .portf__container {
+    display: block; }
+
+  .promo2__name {
+    font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
